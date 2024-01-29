@@ -1,0 +1,71 @@
+/* estilos.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    background: #7F7FD5; /* Color de fondo de la página */
+    background: linear-gradient(to bottom right, #535dcf, #2a2716); /* Degradado de fondo */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #535dcf, #2a2716); /* Gradiente de fondo */
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para la tarjeta */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para la tarjeta */
+    width: 400px;
+    max-width: 80%; /* Asegurar que la tarjeta no sea muy ancha en pantallas pequeñas */
+}
+
+select, input[type=password], button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contenedor select,
+.contenedor input[type=password],
+.contenedor button {
+    width: calc(100% - 20px); /* 100% del contenedor - el padding total horizontal */
+    margin-bottom: 5px; /* Margen inferior para separar los elementos */
+    padding: 10px; /* Relleno dentro de los elementos */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del elemento */
+}
+
+button {
+    background-color: #5fbae9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a9ad3;
+}
+
+#mensaje {
+    color: red;
+    text-align: center;
+}
